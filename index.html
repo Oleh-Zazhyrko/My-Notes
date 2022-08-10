@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My notes</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e7319fd88e.js" crossorigin="anonymous"></script>
+
+
+
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <h1><i class="fa-solid fa-note-sticky"></i> MyNotes</h1>
+        <div class="menu-buttons">
+            <button class="add icon"><i class="fa-solid fa-plus"></i> Add</button>
+            <button class="delete-all icon"><i class="fa-solid fa-trash"></i> Delete all</button>
+        </div>
+    </div>
+
+    <div class="note-area">
+
+        <!-- <div class="note">
+            <div class="note-header">
+                <h3 class="note-title">Note #1</h3>
+                <button class="delete-note">
+
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="note-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate expedita repellendus voluptatem
+                eligendi id eaque aliquam quod quis quidem.
+            </div>
+        </div> -->
+
+
+
+
+
+    </div>
+
+    <div class="note-panel">
+        <h2>Add note</h2>
+        <label for="category">Choose category</label>
+        <select id="category" onchange="selectValue()">
+            <option value="0" disabled selected>- choose category -</option>
+            <option value="1">Shopping</option>
+            <option value="1">Work</option>
+            <option value="1">Another</option>
+        </select>
+
+        <label for="text">Type your note text</label>
+        <textarea id="text"></textarea>
+
+        <p class="error">Complete all fields!</p>
+
+        <div class="panel-buttons">
+            <button class="save icon"><i class="fa-solid fa-floppy-disk"></i> Save</button>
+            <button class="cancel icon"><i class="fa-solid fa-rectangle-xmark"></i> Cancel</button>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
